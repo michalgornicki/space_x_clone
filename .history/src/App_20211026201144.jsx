@@ -10,13 +10,13 @@ function App() {
       </div>
       <div className="mission-data">
         <div className="column">
-          <div className="header">MISSION</div>
-          <div className="header">ROCKET</div>
-          <div className="button">LEARN MORE</div>
+        <div className="header">MISSION</div>
+        <div className="header">ROCKET</div>
         </div>
+        <div className="button">LEARN MORE</div>
         <div className="column">
-          <div className="header text-align-right">LAUNCH DATE</div>
-          <div className="header text-align-right">LAUNCH SITE</div>
+        <div className="header">LAUNCH DATE</div>
+        <div className="header">LAUNCH SITE</div>
         </div>
       </div>
 

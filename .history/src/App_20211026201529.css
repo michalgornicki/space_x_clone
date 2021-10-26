@@ -39,8 +39,8 @@ body{
     height: 100px;
 }
 
-.text-align-right{
-    text-align: right;
+.float-right{
+    float: right;
 }
 
 .button{

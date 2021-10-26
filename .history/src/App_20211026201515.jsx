@@ -15,8 +15,8 @@ function App() {
           <div className="button">LEARN MORE</div>
         </div>
         <div className="column">
-          <div className="header text-align-right">LAUNCH DATE</div>
-          <div className="header text-align-right">LAUNCH SITE</div>
+          <div className="header float-right">LAUNCH DATE</div>
+          <div className="header float-right">LAUNCH SITE</div>
         </div>
       </div>
 

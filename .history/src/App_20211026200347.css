@@ -26,21 +26,16 @@ body{
 .mission-data{
     border-bottom: 1px solid rgb(59, 60, 60);
     display: flex;
-    padding-bottom: 4vmin;
-    padding-top: 4vmin;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
 }
 
 .rescue-ships{
-    padding-top: 4vmin;
 }
 
 .header{
     color:rgb(134, 134, 134);
-    height: 100px;
-}
-
-.text-align-right{
-    text-align: right;
 }
 
 .button{
@@ -51,8 +46,4 @@ body{
     padding-right: 4vmin;
     border: 1px solid white;
     width: fit-content;
-}
-
-.column{
-    width: 50%;
 }
