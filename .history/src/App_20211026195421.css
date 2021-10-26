@@ -33,13 +33,3 @@ body{
 .header{
     color:rgb(134, 134, 134)
 }
-
-.button{
-    color: white;
-    padding-top: 2vmin;
-    padding-bottom: 2vmin;
-    padding-left: 4vmin;
-    padding-right: 4vmin;
-    border: 1px solid white;
-    width: fit-content;
-}

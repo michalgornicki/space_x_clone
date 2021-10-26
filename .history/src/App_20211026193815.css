@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+
+.content{
+    width: 70%;
+    height: 800px;
+    margin: auto;
+    background-color: rgb(29, 29, 29);
+}
+
+.logo{
+    width: 30%;
+}

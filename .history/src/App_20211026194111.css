@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+
+.content{
+    padding-top: 5vmin;
+    width: 70%;
+    height: 800px;
+    margin: auto;
+    background-color: rgb(29, 29, 29);
+    position: relative;
+}
+
+.logo{
+    width: 75%;
+    margin: auto;
+    display: block;
+    padding-bottom: 4vmin;
+    border-bottom: 1px solid gray;
+}

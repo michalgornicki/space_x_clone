@@ -1,0 +1,22 @@
+body{
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(68, 68, 68));
+}
+
+.content{
+    padding-top: 5vmin;
+    width: 70%;
+    height: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.navbar{
+    border-bottom: 1px solid rgb(92, 92, 92);
+}
+
+.logo{
+    width: 25%;
+    margin: auto;
+    display: block;
+    padding-bottom: 4vmin;
+}
