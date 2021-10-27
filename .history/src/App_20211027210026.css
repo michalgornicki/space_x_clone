@@ -1,0 +1,189 @@
+body{
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(68, 68, 68));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.2vmin;
+    height: 110vh;
+}
+
+.content{
+    padding-top: 5vmin;
+    width: 60%;
+    height: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.navbar{
+    border-bottom: 1px solid rgb(59, 60, 60);
+    display: flex;
+}
+
+.logo{
+    width: 25%;
+    margin: auto;
+    display: block;
+    padding-bottom: 4vmin;
+}
+
+.arrow-left{
+    height: 3vmin;
+    filter:brightness(0.3);
+}
+
+.arrow-left:hover{
+    filter:brightness(1);
+    cursor: pointer;
+}
+
+.arrow-right{
+    height: 3vmin;
+    filter:brightness(0.3);
+}
+
+.arrow-right:hover{
+    filter:brightness(1);
+    cursor: pointer;
+}
+
+.mission-data{
+    border-bottom: 1px solid rgb(59, 60, 60);
+    display: flex;
+    padding-bottom: 4vmin;
+    padding-top: 4vmin;
+}
+
+.rescue-ships{
+    padding-top: 4vmin;
+}
+
+.ship-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2vmin;
+}
+
+.header{
+    color:rgb(134, 134, 134);
+    height: 40px;
+}
+
+.header-content{
+    color: white;
+    height: 60px;
+    margin-bottom: 2vmin;
+}
+
+.text-align-right{
+    text-align: right;
+}
+
+.text-large{
+    font-size: 4vmin;
+    font-weight: 600;
+}
+
+.learn-more{
+    color: white;
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    padding-left: 4vmin;
+    padding-right: 4vmin;
+    border: 1px solid white;
+    width: fit-content;
+}
+
+.learn-more:hover{
+    background-color: rgb(97, 97, 97);
+    cursor: pointer;
+}
+
+.column{
+    width: 50%;
+}
+
+.ship-slide{
+    background-color: white;
+    width: 250px;
+    height: 200px;
+    border-radius: 2vmin;
+    overflow: hidden;
+}
+
+.ship-image{
+    width: 100%;
+    height: 55%;
+    border-top-left-radius: 2vmin;
+    border-top-right-radius: 2vmin;
+}
+
+.header-slide{
+    font-size: 2.2vmin;
+    font-weight: 900;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    width: 95%;
+    margin: auto;
+    padding-bottom: 1vmin;
+    letter-spacing: normal;
+}
+
+.header-content-slide{
+    font-size: 1.5vmin;
+    color: rgb(167, 167, 167);
+    margin-left: 5%;
+    display: inline;
+
+}
+
+.header-content-slide-text{
+    color: black;
+    display: inline;
+    font-weight: 900;
+    letter-spacing: normal;
+    margin-left: 5%;
+}
+
+.row{
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .content{
+        padding-top: 2vmin;
+        width: 90%;
+        height: 800px;
+        margin: auto;
+        position: relative;
+    }
+
+    .logo{
+        width: 60%;
+        margin: auto;
+        display: block;
+        padding-bottom: 4vmin;
+    }
+
+    .arrow-left{
+        height: 6vmin;
+        filter:brightness(0.3);
+    }
+
+    
+    .arrow-right{
+        height: 6vmin;
+        filter:brightness(0.3);
+    }
+
+    .mission-data{
+        flex-direction: column;
+    }
+
+    .learn-more{
+        width: 100%;
+    }
+
+    .column{
+        width: 100%;
+    }
+
+}
