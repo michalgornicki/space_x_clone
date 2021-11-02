@@ -10,22 +10,41 @@ const LAUNCHES = `
     mission_name
     launch_date_local
     launch_site {
-      site_name
       site_name_long
+      site_name
+      site_id
+    }
+    links {
+      article_link
+      video_link
     }
     rocket {
       rocket_name
+      first_stage {
+        cores {
+          flight
+          core {
+            reuse_count
+            status
+          }
+        }
+      }
+      second_stage {
+        payloads {
+          payload_type
+          payload_mass_kg
+          payload_mass_lbs
+        }
+      }
     }
     ships {
       name
       home_port
       image
-      weight_kg
     }
     launch_date_utc
   }
 }
-
 `;
 
 function App() {
@@ -119,9 +138,7 @@ function App() {
                   <div className="row">
                     <div className="header-content-slide">
                       WEIGHT [KG]
-                      <div className="header-content-slide-text">
-                        {launches[launchnumber].ships[0].weight_kg? launches[launchnumber].ships[0].weight_kg : "not available"}
-                      </div>
+                      <div className="header-content-slide-text"></div>
                     </div>
                   </div>
                 </div>
@@ -150,9 +167,7 @@ function App() {
                   <div className="row">
                     <div className="header-content-slide">
                       WEIGHT [KG]
-                      <div className="header-content-slide-text">
-                      {launches[launchnumber].ships[1].weight_kg? launches[launchnumber].ships[1].weight_kg : "not available"}
-                      </div>
+                      <div className="header-content-slide-text"></div>
                     </div>
                   </div>
                 </div>
@@ -181,9 +196,7 @@ function App() {
                   <div className="row">
                     <div className="header-content-slide">
                       WEIGHT [KG]
-                      <div className="header-content-slide-text">
-                      {launches[launchnumber].ships[2].weight_kg? launches[launchnumber].ships[2].weight_kg : "not available"}
-                      </div>
+                      <div className="header-content-slide-text"></div>
                     </div>
                   </div>
                 </div>
@@ -212,9 +225,7 @@ function App() {
                   <div className="row">
                     <div className="header-content-slide">
                       WEIGHT [KG]
-                      <div className="header-content-slide-text">
-                      {launches[launchnumber].ships[3].weight_kg? launches[launchnumber].ships[3].weight_kg : "not available"}
-                      </div>
+                      <div className="header-content-slide-text"></div>
                     </div>
                   </div>
                 </div>

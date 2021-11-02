@@ -120,7 +120,7 @@ function App() {
                     <div className="header-content-slide">
                       WEIGHT [KG]
                       <div className="header-content-slide-text">
-                        {launches[launchnumber].ships[0].weight_kg? launches[launchnumber].ships[0].weight_kg : "not available"}
+                        {launches[launchnumber].ships[0].weight_kg}
                       </div>
                     </div>
                   </div>
@@ -151,7 +151,7 @@ function App() {
                     <div className="header-content-slide">
                       WEIGHT [KG]
                       <div className="header-content-slide-text">
-                      {launches[launchnumber].ships[1].weight_kg? launches[launchnumber].ships[1].weight_kg : "not available"}
+                        {launches[launchnumber].ships[1].weight_kg}
                       </div>
                     </div>
                   </div>
@@ -182,7 +182,7 @@ function App() {
                     <div className="header-content-slide">
                       WEIGHT [KG]
                       <div className="header-content-slide-text">
-                      {launches[launchnumber].ships[2].weight_kg? launches[launchnumber].ships[2].weight_kg : "not available"}
+                      {launches[launchnumber].ships[2].weight_kg}
                       </div>
                     </div>
                   </div>
@@ -213,7 +213,7 @@ function App() {
                     <div className="header-content-slide">
                       WEIGHT [KG]
                       <div className="header-content-slide-text">
-                      {launches[launchnumber].ships[3].weight_kg? launches[launchnumber].ships[3].weight_kg : "not available"}
+                      {launches[launchnumber].ships[3].weight_kg}
                       </div>
                     </div>
                   </div>
