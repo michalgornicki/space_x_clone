@@ -78,10 +78,9 @@ function App() {
               <div className="header-content text-large">
                 {launches[launchnumber].mission_name}
               </div>
-              <div className="header"> ROCKET</div>
+              <div className="header">ROCKET</div>
               <div className="header-content">
-              <abbr title="Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of people and payloads into Earth orbit and beyond. Falcon 9 is the world’s first orbital class reusable rocket. Reusability allows SpaceX to refly the most expensive parts of the rocket, which in turn drives down the cost of space access.
-">{launches[launchnumber].rocket.rocket_name}</abbr>
+                {launches[launchnumber].rocket.rocket_name}
               </div>
             </div>
             <div className="column">
@@ -90,9 +89,13 @@ function App() {
                 {launches[launchnumber].launch_date_utc.substring(0, 10)}
               </div>
               <div className="header text-align-right">LAUNCH SITE</div>
-              <div className="header-content text-align-right">
-                <abbr title={launches[launchnumber].launch_site.site_name_long}> {launches[launchnumber].launch_site.site_name} </abbr>
+              <div className="header-content text-align-right tooltip">
+                {launches[launchnumber].launch_site.site_name}
+                <div className="header-content text-align-right tooltip-text">
+                {launches[launchnumber].launch_site.site_name_long}
               </div>
+              </div>
+              
               
             </div>
           </div>

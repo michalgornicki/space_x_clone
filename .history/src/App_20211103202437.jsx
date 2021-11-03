@@ -80,8 +80,7 @@ function App() {
               </div>
               <div className="header"> ROCKET</div>
               <div className="header-content">
-              <abbr title="Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of people and payloads into Earth orbit and beyond. Falcon 9 is the world’s first orbital class reusable rocket. Reusability allows SpaceX to refly the most expensive parts of the rocket, which in turn drives down the cost of space access.
-">{launches[launchnumber].rocket.rocket_name}</abbr>
+              <abbr title="aaa">{launches[launchnumber].rocket.rocket_name}</abbr>
               </div>
             </div>
             <div className="column">
