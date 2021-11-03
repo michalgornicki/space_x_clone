@@ -83,8 +83,8 @@ body {
 }
 
 .text-large {
-  font-size: 3.2vmin;
-  font-weight: 900;
+  font-size: 4vmin;
+  font-weight: 600;
 }
 
 .learn-more {
@@ -95,14 +95,12 @@ body {
   padding-right: 4vmin;
   border: 1px solid white;
   width: fit-content;
-  transition: 0.3s;
-
 }
 
 .learn-more:hover {
   background-color: rgb(97, 97, 97);
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .column {
@@ -165,10 +163,7 @@ body {
 
 @media only screen and (max-width: 800px) {
   body {
-    height: max-content;
-    padding-bottom: 150px;
-    background-size: cover;
-    background-position-x: center;
+    height: 250vh;
   }
 
   .content {
@@ -224,22 +219,13 @@ body {
     gap: 4vmin;
   }
 
-.ship-slide {
-  position: relative;
-  background-color: rgb(0, 0, 0);
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-  filter: drop-shadow(0px 0px 10px black);
-  transition: 0.5s;
-  top: 30px;
-  border: 2px solid rgb(255, 255, 255);
-}
-
-.ship-image {
-  height: 180px;
-  width: 100%;
-}
+  .ship-slide {
+    background-color: white;
+    width: 100%;
+    height: 280px;
+    border-radius: 4vmin;
+    overflow: hidden;
+  }
 
   .header-slide {
     font-size: 6vmin;
@@ -252,7 +238,7 @@ body {
   }
 
   .header-content-slide {
-    font-size: 4vmin;
+    font-size: 3.5vmin;
     color: rgb(167, 167, 167);
     margin-left: 5%;
     display: inline;

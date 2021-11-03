@@ -74,7 +74,7 @@ function App() {
           </div>
           <div className="mission-data">
             <div className="column">
-              <div className="header">MISSION {launchnumber + 1 + "/10"} </div> 
+              <div className="header">MISSION {launchnumber + 1 /10} </div> 
               <div className="header-content text-large">
                 {launches[launchnumber].mission_name}
               </div>

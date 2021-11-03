@@ -62,7 +62,7 @@ function App() {
                 launchnumber > 0 ? setLaunchnumber(launchnumber - 1) : ""
               }
             />
-            <a href="index.html"><img className="logo" src={logo} alt="" /></a>
+            <img className="logo" src={logo} alt="" />
             <img
               className="arrow-right"
               src={arrowRight}
@@ -74,7 +74,7 @@ function App() {
           </div>
           <div className="mission-data">
             <div className="column">
-              <div className="header">MISSION {launchnumber + 1 + "/10"} </div> 
+              <div className="header">MISSION</div>
               <div className="header-content text-large">
                 {launches[launchnumber].mission_name}
               </div>
@@ -82,6 +82,7 @@ function App() {
               <div className="header-content">
                 {launches[launchnumber].rocket.rocket_name}
               </div>
+              <div className="learn-more">LEARN MORE</div>
             </div>
             <div className="column">
               <div className="header text-align-right">LAUNCH DATE</div>
@@ -167,7 +168,7 @@ function App() {
                     <div className="header-content-slide">
                       YEAR BUILT
                       <div className="header-content-slide-text">
-                        {launches[launchnumber].ships[1].year_built? launches[launchnumber].ships[1].year_built : "not available"}
+                        {launches[launchnumber].ships[0].year_built? launches[launchnumber].ships[0].year_built : "not available"}
                       </div>
                     </div>
                   </div>
@@ -202,14 +203,6 @@ function App() {
                       </div>
                     </div>
                   </div>
-                  <div className="row">
-                    <div className="header-content-slide">
-                      YEAR BUILT
-                      <div className="header-content-slide-text">
-                        {launches[launchnumber].ships[2].year_built? launches[launchnumber].ships[2].year_built : "not available"}
-                      </div>
-                    </div>
-                  </div>
                 </div>
               ) : (
                 ""
@@ -238,14 +231,6 @@ function App() {
                       TYPE
                       <div className="header-content-slide-text">
                       {launches[launchnumber].ships[3].type? launches[launchnumber].ships[3].type : "not available"}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="header-content-slide">
-                      YEAR BUILT
-                      <div className="header-content-slide-text">
-                        {launches[launchnumber].ships[3].year_built? launches[launchnumber].ships[3].year_built : "not available"}
                       </div>
                     </div>
                   </div>
