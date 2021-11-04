@@ -268,7 +268,7 @@ function App() {
           {launches.map((launch, index) => {
             return (
             <div class="mission-item" onClick={() =>
-              setLaunchnumber(index)}>{launch.mission_name} <span className="mission-date"> {launch.launch_date_local.substring(0, 10)} </span></div>
+              setLaunchnumber(index)}>{launch.mission_name}</div>
           )
           })}
         </div>

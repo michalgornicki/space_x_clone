@@ -53,7 +53,6 @@ function App() {
         <div> is loading </div>
       ) : (
         <div className="content">
-        <div className="container-1">
         
           <div className="navbar">
             <img
@@ -260,20 +259,17 @@ function App() {
             </div>
           </div>
 
-          
-        </div>
-        <div className="container-2">
+          <div className="container">
 
-        <div className="mission-list">
-          {launches.map((launch, index) => {
-            return (
-            <div class="mission-item" onClick={() =>
-              setLaunchnumber(index)}>{launch.mission_name} <span className="mission-date"> {launch.launch_date_local.substring(0, 10)} </span></div>
-          )
-          })}
-        </div>
+          <div className="mission-list">
+            {launches.map((launch) => {
+              return (
+              <div>{launch.mission_name}</div>
+            )
+            })}
+          </div>
 
-        </div>
+          </div>
         </div>
       )}
     </div>

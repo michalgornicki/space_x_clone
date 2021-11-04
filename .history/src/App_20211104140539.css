@@ -187,7 +187,7 @@ body {
   width: 500px;
   margin:auto;
   cursor: pointer;
-  line-height: 3vmin;
+  line-height: 2vmin;
 }
 
 .mission-item:hover{

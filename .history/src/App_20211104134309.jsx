@@ -265,10 +265,10 @@ function App() {
         <div className="container-2">
 
         <div className="mission-list">
-          {launches.map((launch, index) => {
+          {launches.map((launch) => {
             return (
-            <div class="mission-item" onClick={() =>
-              setLaunchnumber(index)}>{launch.mission_name} <span className="mission-date"> {launch.launch_date_local.substring(0, 10)} </span></div>
+            <div onClick={() =>
+              setLaunchnumber(launches)}>{launch.mission_name}</div>
           )
           })}
         </div>

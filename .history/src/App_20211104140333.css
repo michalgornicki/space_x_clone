@@ -187,13 +187,13 @@ body {
   width: 500px;
   margin:auto;
   cursor: pointer;
-  line-height: 3vmin;
 }
 
 .mission-item:hover{
   transition: 0.2s;
-  background-color: rgba(131, 131, 131, 0.678);
+  font-weight: 900;
 }
+
 
 .mission-date{
   float: right;

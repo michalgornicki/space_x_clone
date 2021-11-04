@@ -6,7 +6,7 @@ import arrowRight from "./right-arrow.png";
 
 const LAUNCHES = `
 {
-  launchesPast(limit: 100) {
+  launchesPast(limit: 10) {
     mission_name
     launch_date_local
     launch_site {
@@ -53,8 +53,6 @@ function App() {
         <div> is loading </div>
       ) : (
         <div className="content">
-        <div className="container-1">
-        
           <div className="navbar">
             <img
               className="arrow-left"
@@ -70,13 +68,13 @@ function App() {
               src={arrowRight}
               alt=""
               onClick={() =>
-                launchnumber < 99 ? setLaunchnumber(launchnumber + 1) : ""
+                launchnumber < 9 ? setLaunchnumber(launchnumber + 1) : ""
               }
             />
           </div>
           <div className="mission-data">
             <div className="column">
-              <div className="header">MISSION {launchnumber + 1 + "/100"} </div> 
+              <div className="header">MISSION {launchnumber + 1 + "/10"} {launches[0].mission_name} </div> 
               <div className="header-content text-large">
                 {launches[launchnumber].mission_name}
               </div>
@@ -259,21 +257,6 @@ function App() {
               )}
             </div>
           </div>
-
-          
-        </div>
-        <div className="container-2">
-
-        <div className="mission-list">
-          {launches.map((launch, index) => {
-            return (
-            <div class="mission-item" onClick={() =>
-              setLaunchnumber(index)}>{launch.mission_name} <span className="mission-date"> {launch.launch_date_local.substring(0, 10)} </span></div>
-          )
-          })}
-        </div>
-
-        </div>
         </div>
       )}
     </div>
