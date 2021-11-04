@@ -16,7 +16,7 @@ body {
 }
 
 .container-1{
-  height: fit-content;
+  height: 100vh;
   position: relative;
 }
 
@@ -64,15 +64,9 @@ body {
   padding-top: 4vmin;
 }
 
-.launch-image-container{
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 2vmin;
-}
-
 .launch-image{
-  height: 300px;
-  width: 30%;
+  height: 400px;
+  width: 33%;
   object-fit: cover;
 }
 
@@ -192,7 +186,6 @@ body {
 
 .mission-list{
   color: white;
-  margin-top: 5vmin;
 }
 
 .mission-item{
@@ -312,38 +305,4 @@ body {
     font-size: 7vmin;
     font-weight: 600;
   }
-
-  .launch-image-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 2vmin;
-  }
-  
-  .launch-image{
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-    margin-top: 2vmin;
-  }
-
-  .mission-list{
-    color: white;
-    margin-top: 15vmin;
-  }
-  
-  .mission-item{
-    font-size: 5vmin;
-    transition: 0.2s;
-    width: 100%;
-    margin:auto;
-    cursor: pointer;
-    padding: 1.5vmin;
-    background-color: rgba(0, 0, 0, 0.356);
-  }
-
-  .mission-date{
-    display: none;
-  }
-
 }

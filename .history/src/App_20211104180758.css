@@ -76,6 +76,11 @@ body {
   object-fit: cover;
 }
 
+.launch-image:hover{
+  object-fit:none;
+  position: absolute;
+}
+
 .rescue-ships {
   padding-top: 4vmin;
 }
@@ -312,38 +317,4 @@ body {
     font-size: 7vmin;
     font-weight: 600;
   }
-
-  .launch-image-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 2vmin;
-  }
-  
-  .launch-image{
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-    margin-top: 2vmin;
-  }
-
-  .mission-list{
-    color: white;
-    margin-top: 15vmin;
-  }
-  
-  .mission-item{
-    font-size: 5vmin;
-    transition: 0.2s;
-    width: 100%;
-    margin:auto;
-    cursor: pointer;
-    padding: 1.5vmin;
-    background-color: rgba(0, 0, 0, 0.356);
-  }
-
-  .mission-date{
-    display: none;
-  }
-
 }

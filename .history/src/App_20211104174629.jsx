@@ -102,13 +102,7 @@ function App() {
             </div>
           </div>
 
-          <div className="launch-image-container">
-
-          {launches[launchnumber].links.flickr_images[0] ? <img class="launch-image" src={launches[launchnumber].links.flickr_images[0]} alt="" /> : "" }
-          {launches[launchnumber].links.flickr_images[1] ? <img class="launch-image" src={launches[launchnumber].links.flickr_images[1]} alt="" /> : "" }
-          {launches[launchnumber].links.flickr_images[2] ? <img class="launch-image" src={launches[launchnumber].links.flickr_images[2]} alt="" /> : "" }
-
-          </div>
+          <img src={launches[launchnumber].links.flickr_images[0] ? launches.links.flickr_images[0] : ""} alt="" />
 
           <div className="rescue-ships">
             <div className="header">RESCUE SHIPS</div>

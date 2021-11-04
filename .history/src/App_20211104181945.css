@@ -329,21 +329,17 @@ body {
 
   .mission-list{
     color: white;
-    margin-top: 15vmin;
+    margin-top: 10vmin;
   }
   
   .mission-item{
-    font-size: 5vmin;
     transition: 0.2s;
     width: 100%;
     margin:auto;
     cursor: pointer;
-    padding: 1.5vmin;
+    padding: 1vmin;
     background-color: rgba(0, 0, 0, 0.356);
-  }
-
-  .mission-date{
-    display: none;
+    overflow: hidden;
   }
 
 }
