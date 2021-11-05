@@ -373,8 +373,7 @@ body {
     padding: 0vmin;
     padding-bottom: 1vmin;
     padding-top: 1vmin;
-    background-color: rgb(0, 0, 0);
-    
+    background-color: rgba(0, 0, 0, 0.356);
   }
 
   .mission-date{
