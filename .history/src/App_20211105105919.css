@@ -219,7 +219,7 @@ body {
   body {
     height: max-content;
     padding-bottom: 150px;
-    background-size: auto 850px;
+    background-size: auto 100vh;
     background-position-x: center;
   }
 
