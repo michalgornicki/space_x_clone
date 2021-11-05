@@ -18,7 +18,6 @@ body {
 .container-1{
   height: fit-content;
   position: relative;
-  margin-bottom: 10vmin;
 }
 
 .container-2{
@@ -196,7 +195,7 @@ body {
 
 .mission-list{
   color: white;
-  margin-top: 3vmin;
+  margin-top: 5vmin;
 }
 
 .mission-item{
@@ -286,6 +285,7 @@ body {
     justify-content: space-evenly;
     gap: 4vmin;
     margin-top: 3vmin;
+    margin-bottom: 13vmin;
   }
 
 .ship-slide {
@@ -346,7 +346,7 @@ body {
 
   .mission-list{
     color: white;
-    margin-top: 3vmin;
+    margin-top: 15vmin;
   }
   
   .mission-item{

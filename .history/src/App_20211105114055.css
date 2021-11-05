@@ -196,7 +196,6 @@ body {
 
 .mission-list{
   color: white;
-  margin-top: 3vmin;
 }
 
 .mission-item{
@@ -346,7 +345,7 @@ body {
 
   .mission-list{
     color: white;
-    margin-top: 3vmin;
+    margin-top: 15vmin;
   }
   
   .mission-item{
