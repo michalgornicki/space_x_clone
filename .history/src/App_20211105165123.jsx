@@ -101,23 +101,15 @@ function App() {
               </div>
               
             </div>
-          </div> 
-
-          
-
-          {launches[launchnumber].details ?
-          <div>
-          <div className="header main-header">DETAILS</div>
-          <div className="details">{launches[launchnumber].details}</div>
           </div>
-          : ""}
 
-          {launches[launchnumber].links.flickr_images[0] ?
-          <div>
+          {launches[launchnumber].details ? <div className="details">{launches[launchnumber].details}</div> : ""}
+
+          {launches[launchnumber].links.flickr_images[0] ? 
           
-          <div className="header main-header">LAUNCH PHOTOS</div>
               <div className="launch-image-container">
-                
+              <div className="header">RESCUE SHIPS</div>
+
                 <img
                   className="launch-image"
                   src={launches[launchnumber].links.flickr_images[0]}
@@ -134,13 +126,12 @@ function App() {
                   alt=""
                 />
               </div>
-              </div>
              : 
               ""
             }
 
           <div className="rescue-ships">
-            <div className="header main-header">RESCUE SHIPS</div>
+            <div className="header">RESCUE SHIPS</div>
             <div className="ship-container">
               {launches[launchnumber].ships[0] ? (
                 <div className="ship-slide">
@@ -304,7 +295,7 @@ function App() {
         </div>
         <div className="container-2">
 
-        <div className="header main-header">LAST 100 MISSIONS</div>
+        <div className="header">LAST 100 MISSIONS</div>
 
         <div className="mission-list">
           {launches.map((launch, index) => {

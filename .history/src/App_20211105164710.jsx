@@ -101,46 +101,21 @@ function App() {
               </div>
               
             </div>
-          </div> 
-
-          
-
-          {launches[launchnumber].details ?
-          <div>
-          <div className="header main-header">DETAILS</div>
-          <div className="details">{launches[launchnumber].details}</div>
           </div>
-          : ""}
 
-          {launches[launchnumber].links.flickr_images[0] ?
-          <div>
-          
-          <div className="header main-header">LAUNCH PHOTOS</div>
-              <div className="launch-image-container">
-                
-                <img
-                  className="launch-image"
-                  src={launches[launchnumber].links.flickr_images[0]}
-                  alt=""
-                />
-                <img
-                  className="launch-image"
-                  src={launches[launchnumber].links.flickr_images[1]}
-                  alt=""
-                />
-                <img
-                  className="launch-image"
-                  src={launches[launchnumber].links.flickr_images[2]}
-                  alt=""
-                />
-              </div>
-              </div>
-             : 
-              ""
-            }
+          {launches[launchnumber].details ? <div className="details">{launches[launchnumber].details}</div> : ""}
+
+          <div className="launch-image-container">
+
+          {launches[launchnumber].links.flickr_images[0] ? <img className="launch-image" src={launches[launchnumber].links.flickr_images[0]} alt="" /> : "" }
+          {launches[launchnumber].links.flickr_images[1] ? <img className="launch-image" src={launches[launchnumber].links.flickr_images[1]} alt="" /> : "" }
+          {launches[launchnumber].links.flickr_images[2] ? <img className="launch-image" src={launches[launchnumber].links.flickr_images[2]} alt="" /> : "" }
+            
+            
+          </div>
 
           <div className="rescue-ships">
-            <div className="header main-header">RESCUE SHIPS</div>
+            <div className="header">RESCUE SHIPS</div>
             <div className="ship-container">
               {launches[launchnumber].ships[0] ? (
                 <div className="ship-slide">
@@ -304,7 +279,7 @@ function App() {
         </div>
         <div className="container-2">
 
-        <div className="header main-header">LAST 100 MISSIONS</div>
+        <div className="header">LAST 100 MISSIONS</div>
 
         <div className="mission-list">
           {launches.map((launch, index) => {

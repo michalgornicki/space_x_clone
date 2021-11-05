@@ -80,6 +80,7 @@ body {
   letter-spacing: normal;
   text-align: justify;
   margin-bottom: 5vmin;
+  margin-top: 5vmin;
   padding: 2vmin;
   line-height: 4vmin;
 }
@@ -123,8 +124,6 @@ body {
 
 .main-header{
   margin-top: 5vmin;
-  margin-bottom: 5vmin;
-  font-size: 3vmin;
 }
 
 .header-content {
@@ -287,12 +286,6 @@ body {
   .header {
     font-size: 5vmin;
   }
-
-  .main-header{
-    margin-top: 5vmin;
-    margin-bottom: 5vmin;
-    font-size: 7vmin;
-  }
   
   .header-content {
     font-size: 5vmin;
@@ -356,14 +349,13 @@ body {
   .details{
     font-size: 5vmin;
     line-height: 8vmin;
-    }
+  }
 
   .launch-image-container{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: 2vmin;
-    height: unset;
   }
   
   .launch-image{

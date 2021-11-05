@@ -85,10 +85,10 @@ function App() {
                 {launches[launchnumber].mission_name}
               </div>
               <div className="header"> ROCKET</div>
-              <div className="header-content">
+              <div className="header-content"></div>
+              <div className="header">LAUNCH PHOTOS</div>
               <abbr title="Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of people and payloads into Earth orbit and beyond. Falcon 9 is the world’s first orbital class reusable rocket. Reusability allows SpaceX to refly the most expensive parts of the rocket, which in turn drives down the cost of space access.
 ">{launches[launchnumber].rocket.rocket_name}</abbr>
-              </div>
             </div>
             <div className="column">
               <div className="header text-align-right">LAUNCH DATE</div>
@@ -101,21 +101,14 @@ function App() {
               </div>
               
             </div>
-          </div> 
-
-          
-
-          {launches[launchnumber].details ?
-          <div>
-          <div className="header main-header">DETAILS</div>
-          <div className="details">{launches[launchnumber].details}</div>
           </div>
-          : ""}
+
+          {launches[launchnumber].details ? <div className="details">{launches[launchnumber].details}</div> : ""}
 
           {launches[launchnumber].links.flickr_images[0] ?
           <div>
           
-          <div className="header main-header">LAUNCH PHOTOS</div>
+          <div className="header">LAUNCH PHOTOS</div>
               <div className="launch-image-container">
                 
                 <img
@@ -140,7 +133,7 @@ function App() {
             }
 
           <div className="rescue-ships">
-            <div className="header main-header">RESCUE SHIPS</div>
+            <div className="header">RESCUE SHIPS</div>
             <div className="ship-container">
               {launches[launchnumber].ships[0] ? (
                 <div className="ship-slide">
@@ -304,7 +297,7 @@ function App() {
         </div>
         <div className="container-2">
 
-        <div className="header main-header">LAST 100 MISSIONS</div>
+        <div className="header">LAST 100 MISSIONS</div>
 
         <div className="mission-list">
           {launches.map((launch, index) => {

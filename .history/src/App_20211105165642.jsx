@@ -304,7 +304,7 @@ function App() {
         </div>
         <div className="container-2">
 
-        <div className="header main-header">LAST 100 MISSIONS</div>
+        <div className="header">LAST 100 MISSIONS</div>
 
         <div className="mission-list">
           {launches.map((launch, index) => {

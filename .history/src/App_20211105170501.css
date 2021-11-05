@@ -287,12 +287,6 @@ body {
   .header {
     font-size: 5vmin;
   }
-
-  .main-header{
-    margin-top: 5vmin;
-    margin-bottom: 5vmin;
-    font-size: 7vmin;
-  }
   
   .header-content {
     font-size: 5vmin;
