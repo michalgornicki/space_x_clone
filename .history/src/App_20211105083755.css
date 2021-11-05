@@ -12,7 +12,7 @@ body {
   width: 60%;
   margin: auto;
   position: relative;
-  min-height: 100%;
+  height: 100vh;
 }
 
 .container-1{
@@ -74,13 +74,11 @@ body {
   height: 300px;
   width: 30%;
   object-fit: cover;
-  transition: 0.3s;
+  z-index: 2;
 }
 
 .launch-image:hover{
-  transform: scale(1.4);
-  z-index: 2;
-  transition: 0.3s;
+  transform: scale(2);
 }
 
 .rescue-ships {
@@ -226,6 +224,7 @@ body {
   .content {
     padding-top: 2vmin;
     width: 90%;
+    height: 800px;
     margin: auto;
     position: relative;
   }

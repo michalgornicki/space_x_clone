@@ -226,6 +226,7 @@ body {
   .content {
     padding-top: 2vmin;
     width: 90%;
+    height: 800px;
     margin: auto;
     position: relative;
   }
