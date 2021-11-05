@@ -74,13 +74,14 @@ body {
   height: 300px;
   width: 30%;
   object-fit: cover;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .launch-image:hover{
-  height: 60vh;
+  height: 100%;
   width: 100%;
   object-fit: cover;
+  margin-top: 2vmin;
 }
 
 .rescue-ships {
@@ -218,7 +219,6 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-
   html{
     height: 100%;
   }
@@ -232,7 +232,7 @@ body {
 
   .content {
     padding-top: 2vmin;
-    width: 95%;
+    width: 90%;
     margin: auto;
     position: relative;
   }
@@ -355,7 +355,7 @@ body {
     width: 100%;
     margin:auto;
     cursor: pointer;
-    padding: 0vmin;
+    padding: 1.5vmin;
     background-color: rgba(0, 0, 0, 0.356);
   }
 
