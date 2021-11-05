@@ -72,8 +72,8 @@ body {
   text-align: justify;
   margin-bottom: 5vmin;
   margin-top: 5vmin;
+  background-color: rgba(0, 0, 0, 0.486);
   padding: 2vmin;
-  line-height: 4vmin;
 }
 
 .launch-image-container{
@@ -334,7 +334,6 @@ body {
 
   .details{
     font-size: 5vmin;
-    line-height: 8vmin;
   }
 
   .launch-image-container{

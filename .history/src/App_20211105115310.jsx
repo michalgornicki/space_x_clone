@@ -103,8 +103,6 @@ function App() {
             </div>
           </div>
 
-          <div className="details">{launches[launchnumber].details}</div>
-
           <div className="launch-image-container">
 
           {launches[launchnumber].links.flickr_images[0] ? <img className="launch-image" src={launches[launchnumber].links.flickr_images[0]} alt="" /> : "" }

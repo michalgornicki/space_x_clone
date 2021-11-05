@@ -72,8 +72,6 @@ body {
   text-align: justify;
   margin-bottom: 5vmin;
   margin-top: 5vmin;
-  padding: 2vmin;
-  line-height: 4vmin;
 }
 
 .launch-image-container{
@@ -333,8 +331,12 @@ body {
   }
 
   .details{
-    font-size: 5vmin;
-    line-height: 8vmin;
+    color: white;
+    font-size: 2.5vmin;
+    letter-spacing: normal;
+    text-align: justify;
+    margin-bottom: 5vmin;
+    margin-top: 5vmin;
   }
 
   .launch-image-container{
