@@ -35,7 +35,7 @@ const LAUNCHES = `
 
 function App() {
   const [launches, setLaunches] = React.useState([]);
-  const [launchnumber, setLaunchnumber] = React.useState(6);
+  const [launchnumber, setLaunchnumber] = React.useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
   React.useEffect(() => {
@@ -46,7 +46,7 @@ function App() {
     })
       .then((response) => response.json())
       .then((data) => setLaunches(data.data.launchesPast))
-      .then(() => setIsLoading(false));
+      .then(() => setIsLoading(true));
   }, []);
 
   console.log(launches);
@@ -54,7 +54,7 @@ function App() {
   return (
     <div>
       {isLoading ? (
-        <div className="loading"> data loading ... </div>
+        <div class="loading"> is loading </div>
       ) : (
         <div className="content">
         <div className="container-1">

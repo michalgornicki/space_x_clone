@@ -10,9 +10,8 @@ body {
 .loading{
   position: relative;
   color: white;
-  font-size: 5vmin;
-  text-align: center;
-  margin-top: 40vh;
+  font-size: 10vmin;
+  border: 1px solid red;
 }
 
 .content {

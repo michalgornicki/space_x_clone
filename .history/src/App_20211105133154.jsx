@@ -35,7 +35,7 @@ const LAUNCHES = `
 
 function App() {
   const [launches, setLaunches] = React.useState([]);
-  const [launchnumber, setLaunchnumber] = React.useState(6);
+  const [launchnumber, setLaunchnumber] = React.useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
   React.useEffect(() => {
