@@ -3,6 +3,7 @@ import "./App.css";
 import logo from "./logo.png";
 import arrowLeft from "./left-arrow.png";
 import arrowRight from "./right-arrow.png";
+import Zoom from 'react-reveal/Zoom';
 
 const LAUNCHES = `
 {
@@ -54,12 +55,10 @@ function App() {
   return (
     <div>
       {isLoading ? (
-        <div>
         <div className="loading"> data loading ... </div>
-        <img className="loading-gif" src="loading.gif" alt="" />
-        </div>
       ) : (
-        <div className="content" id="content">
+        <div className="content">
+        <div className="container-1">
         
           <div className="navbar">
             <img
@@ -105,15 +104,15 @@ function App() {
             </div>
           </div> 
 
-          <div className="launch-and-details">
-
+          
           {launches[launchnumber].details ?
           <div>
           <div className="header main-header">DETAILS</div>
           <div className="details">{launches[launchnumber].details}</div>
           </div>
           : ""}
-
+  
+          
           {launches[launchnumber].links.flickr_images[0] ?
           <div>
           
@@ -125,26 +124,24 @@ function App() {
                   src={launches[launchnumber].links.flickr_images[0]}
                   alt=""
                 />
-                {launches[launchnumber].links.flickr_images[1] ? 
                 <img
-                className="launch-image"
-                src={launches[launchnumber].links.flickr_images[1]}
-                alt=""
-              /> : ""}
-                {launches[launchnumber].links.flickr_images[2] ? 
+                  className="launch-image"
+                  src={launches[launchnumber].links.flickr_images[1]}
+                  alt=""
+                />
                 <img
-                className="launch-image"
-                src={launches[launchnumber].links.flickr_images[2]}
-                alt=""
-              /> : ""}
+                  className="launch-image"
+                  src={launches[launchnumber].links.flickr_images[2]}
+                  alt=""
+                />
               </div>
               </div>
              : 
               ""
             }
 
-          </div>
-
+<Zoom fraction="1">
+          
           <div className="rescue-ships">
             <div className="header main-header">RESCUE SHIPS</div>
             <div className="ship-container">
@@ -306,19 +303,26 @@ function App() {
             </div>
           </div>
 
+          </Zoom>
+
           
+        </div>
+        <div className="container-2">
 
         <div className="header main-header">LAST 100 MISSIONS</div>
 
         <div className="mission-list">
           {launches.map((launch, index) => {
             return (
-            <a href="#content"><div className="mission-item" key={index} onClick={() =>
-              setLaunchnumber(index)}>{launch.mission_name} <span className="mission-date"> {launch.launch_date_local.substring(0, 10)} </span></div></a>
+              <Zoom>
+            <div className="mission-item" key={index} onClick={() =>
+              setLaunchnumber(index)}>{launch.mission_name} <span className="mission-date"> {launch.launch_date_local.substring(0, 10)} </span></div>
+              </Zoom>
           )
           })}
         </div>
 
+        </div>
         </div>
       )}
     </div>

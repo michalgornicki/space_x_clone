@@ -81,8 +81,8 @@ body {
 }
 
 .details{
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   font-size: 2.5vmin;
   letter-spacing: normal;
   text-align: justify;

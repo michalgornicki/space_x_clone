@@ -54,12 +54,9 @@ function App() {
   return (
     <div>
       {isLoading ? (
-        <div>
         <div className="loading"> data loading ... </div>
-        <img className="loading-gif" src="loading.gif" alt="" />
-        </div>
       ) : (
-        <div className="content" id="content">
+        <div className="content">
         
           <div className="navbar">
             <img

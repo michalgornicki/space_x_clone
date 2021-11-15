@@ -54,12 +54,10 @@ function App() {
   return (
     <div>
       {isLoading ? (
-        <div>
         <div className="loading"> data loading ... </div>
-        <img className="loading-gif" src="loading.gif" alt="" />
-        </div>
       ) : (
-        <div className="content" id="content">
+        <div className="content">
+        <div className="container-1">
         
           <div className="navbar">
             <img
@@ -105,7 +103,7 @@ function App() {
             </div>
           </div> 
 
-          <div className="launch-and-details">
+          
 
           {launches[launchnumber].details ?
           <div>
@@ -117,6 +115,7 @@ function App() {
           {launches[launchnumber].links.flickr_images[0] ?
           <div>
           
+          .launch
           <div className="header main-header">LAUNCH PHOTOS</div>
               <div className="launch-image-container">
                 
@@ -142,8 +141,6 @@ function App() {
              : 
               ""
             }
-
-          </div>
 
           <div className="rescue-ships">
             <div className="header main-header">RESCUE SHIPS</div>
@@ -307,18 +304,21 @@ function App() {
           </div>
 
           
+        </div>
+        <div className="container-2">
 
         <div className="header main-header">LAST 100 MISSIONS</div>
 
         <div className="mission-list">
           {launches.map((launch, index) => {
             return (
-            <a href="#content"><div className="mission-item" key={index} onClick={() =>
-              setLaunchnumber(index)}>{launch.mission_name} <span className="mission-date"> {launch.launch_date_local.substring(0, 10)} </span></div></a>
+            <div className="mission-item" key={index} onClick={() =>
+              setLaunchnumber(index)}>{launch.mission_name} <span className="mission-date"> {launch.launch_date_local.substring(0, 10)} </span></div>
           )
           })}
         </div>
 
+        </div>
         </div>
       )}
     </div>
