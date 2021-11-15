@@ -12,13 +12,8 @@ body {
   color: white;
   font-size: 5vmin;
   text-align: center;
-  display: block;
-  margin: auto;
   margin-top: 40vh;
-  width: fit-content;
-  padding: 3vmin;
-  background-color: rgba(0, 0, 0, 0.11);
-
+  background-color: rgba(0, 0, 0, 0.473);
 }
 
 .loading-gif{

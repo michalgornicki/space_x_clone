@@ -12,12 +12,9 @@ body {
   color: white;
   font-size: 5vmin;
   text-align: center;
-  display: block;
-  margin: auto;
   margin-top: 40vh;
-  width: fit-content;
-  padding: 3vmin;
-  background-color: rgba(0, 0, 0, 0.11);
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.473);
 
 }
 
