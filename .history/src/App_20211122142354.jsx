@@ -342,6 +342,10 @@ function App() {
             )}
           </div>
 
+          <div></div>
+          <iframe className="launch-video" width="420" height="315"
+src={launches[launchnumber].links.video_link} />
+
          
 
           <div className="header main-header">LAST 100 MISSIONS</div>

@@ -265,6 +265,12 @@ body {
   width: 100%;
 }
 
+.launch-video{
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
 .mission-list{
   color: white;
   margin-top: 3vmin;
