@@ -66,8 +66,10 @@ body {
 }
 
 .arrow-left {
-  height: 12vmin;
+  height: 15vmin;
   filter: brightness(0.8);
+  background-color: rgb(92, 92, 92);
+  border-radius: 100%;
 }
 
 .arrow-left:hover {
@@ -76,8 +78,10 @@ body {
 }
 
 .arrow-right {
-  height: 12vmin;
+  height: 15vmin;
   filter: brightness(0.8);
+  background-color: rgb(92, 92, 92);
+  border-radius: 100%;
 
 }
 
