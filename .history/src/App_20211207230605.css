@@ -263,7 +263,7 @@ body {
 .mission-list{
   color: white;
   margin-top: 3vmin;
-  background-color: rgba(60, 60, 60, 0);
+  background-color: rgba(60, 60, 60, 0.5);
   padding: 2vmin;
 }
 

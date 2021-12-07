@@ -6,7 +6,7 @@ body {
   background-image: url("./wallpaper.jpg");
   background-color: black;
   background-repeat: no-repeat;
-  background-position: 0 -10vh;
+  background-position: 0 20vh;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   letter-spacing: 0.2vmin;
   user-select: none;
@@ -263,7 +263,7 @@ body {
 .mission-list{
   color: white;
   margin-top: 3vmin;
-  background-color: rgba(60, 60, 60, 0);
+  background-color: rgba(60, 60, 60, 0.5);
   padding: 2vmin;
 }
 
