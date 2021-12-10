@@ -12,7 +12,6 @@ body {
   user-select: none;
   width: 100vw;
   margin: 0;
-  overflow-x: hidden;
 }
 
 .loading{
@@ -261,7 +260,7 @@ body {
   width: 100%;
 }
 
-.mission-list{
+.dpre-list{
   color: white;
   margin-top: 3vmin;
   background-color: rgba(60, 60, 60, 0);

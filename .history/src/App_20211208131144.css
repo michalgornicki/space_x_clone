@@ -12,7 +12,6 @@ body {
   user-select: none;
   width: 100vw;
   margin: 0;
-  overflow-x: hidden;
 }
 
 .loading{
